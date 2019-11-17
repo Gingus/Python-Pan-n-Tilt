@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="mainwindow">
+    <property name="height">600</property>
+    <property name="width">400</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="Label_Tilt_Entries">
+        <property name="text" translatable="yes">Tilt
+</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="Tilt_Low_Entry">
+        <property name="text" translatable="yes">Low Adjust</property>
+        <property name="textvariable">string:TiltLowEntryVar</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="Tilt_High_Entry">
+        <property name="text" translatable="yes">High Adjust</property>
+        <property name="textvariable">string:TiltHighEntryVar</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Scale" id="Scale_Tilt">
+        <property name="command">on_scale1_changed</property>
+        <property name="orient">vertical</property>
+        <property name="showvalue">false</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Label_View">
+        <property name="text" translatable="yes">Video Feed
+In Here</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Label_Tilt_Scale">
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Label_Pan">
+        <property name="text" translatable="yes">Tilt</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="Pan_Low_Entry">
+        <property name="text" translatable="yes">Low Adjust</property>
+        <property name="textvariable">string:PanLowEntryVar</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Entry" id="Pan_High_Entry">
+        <property name="text" translatable="yes">High Adjust</property>
+        <property name="textvariable">string:PanHighEntryVar</property>
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Scale" id="Scale_Pan">
+        <property name="command">on_scale2_changed</property>
+        <property name="label" translatable="yes">Pan</property>
+        <property name="orient">horizontal</property>
+        <property name="showvalue">false</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="Label_Pan_Scale">
+        <property name="text" translatable="yes">Pan</property>
+        <layout>
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Button_Update_Tilt">
+        <property name="command">on_Button_Update_Tilt_clicked</property>
+        <property name="text" translatable="yes">Update
+Tilt</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+          <property name="rowspan">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Button_Fire">
+        <property name="text" translatable="yes">Fire!!!</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Button_Update_Pan">
+        <property name="command">on_Button_Update_Pan_clicked</property>
+        <property name="compound">top</property>
+        <property name="text" translatable="yes">Update
+Pan</property>
+        <layout>
+          <property name="column">3</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+          <property name="rowspan">2</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
